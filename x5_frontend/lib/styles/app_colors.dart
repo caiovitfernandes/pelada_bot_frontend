@@ -9,7 +9,7 @@ class AppColors {
 
   // Cores de texto
   static const Color principalText = Color.fromARGB(255, 255, 255, 255);
-  static const Color strongText = Color.fromARGB(255, 40, 114, 44);
+  static const Color strongText = Color.fromRGBO(40, 114, 44, 1);
   static const Color contrastText = Color.fromARGB(255, 221, 122, 8);
   static const Color minusText = Color.fromARGB(255, 146, 146, 146);
 }

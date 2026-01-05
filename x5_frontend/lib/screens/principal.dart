@@ -19,7 +19,7 @@ class _PrincipalState extends State<Principal> {
           child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('images/sports.png'),
+                image: AssetImage('images/sports3.jpg'),
                 fit: BoxFit.cover,
                 colorFilter: ColorFilter.mode(
                   AppColors.background.withValues(alpha: 0.125),
@@ -39,6 +39,8 @@ class _PrincipalState extends State<Principal> {
                 InitialSmallText(),
                 const SizedBox(height: 25.0,),
                 GreenLargeButton(),
+                const SizedBox(height: 15.0,),
+                TransparentLargeButton(),
 
               ],
             )

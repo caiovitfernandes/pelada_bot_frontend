@@ -73,6 +73,12 @@ class AppFonts {
     fontSize: 21,
     fontWeight: FontWeight.bold,
     color: AppColors.background,
+  ); 
+
+  static const TextStyle _whiteTextButton = TextStyle(
+    fontSize: 21,
+    fontWeight: FontWeight.bold,
+    color: AppColors.principalText,
   );  
 
   // Métodos
@@ -83,4 +89,5 @@ class AppFonts {
   static Text bigRich(String textOne, String textTwo, String textThree, String textFour) => Text.rich(TextSpan(text: textOne, style: _bigRichOne, children: [TextSpan(text: textTwo, style: _bigRichTwo), TextSpan(text: textThree, style: _bigRichThree), TextSpan(text: textFour, style: _bigRichFour)]), textAlign: TextAlign.center,);
   static Text smallGrey(String text) => Text(text, style: _smallGrey, textAlign: TextAlign.center,);
   static Text blackTextButton(String text) => Text(text, style: _blackTextButton, textAlign: TextAlign.center,);
+  static Text whiteTextButton(String text) => Text(text, style: _whiteTextButton, textAlign: TextAlign.center,);
 }
