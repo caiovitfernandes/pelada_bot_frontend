@@ -2,3 +2,5 @@ export 'appBar/myAppBar.dart';
 export 'appBar/myBarMenu.dart';
 export './principal_screen/toast.dart';
 export './principal_screen/main_text.dart';
+export './principal_screen/initial_small_text.dart';
+export './principal_screen/green_large_button.dart';

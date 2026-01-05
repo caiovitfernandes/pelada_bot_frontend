@@ -15,16 +15,31 @@ class _PrincipalState extends State<Principal> {
       appBar: MyAppBar(),
       body: SizedBox( 
         width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start, // Alinhamento vertical
-          crossAxisAlignment: CrossAxisAlignment.center, // Alinhamento horizontal
-          children: [
-            const SizedBox(height: 75.0,),
-            Toast(),
-            const SizedBox(height: 25.0,),
-            MainText(),
-
-          ],
+        child: SingleChildScrollView(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('images/sports.png'),
+                fit: BoxFit.cover,
+                colorFilter: ColorFilter.mode(
+                  AppColors.background.withValues(alpha: 0.125),
+                  BlendMode.dstATop
+                )
+              )
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start, // Alinhamento vertical
+              crossAxisAlignment: CrossAxisAlignment.center, // Alinhamento horizontal
+              children: [
+                const SizedBox(height: 75.0,),
+                Toast(),
+                const SizedBox(height: 25.0,),
+                MainText(),
+                const SizedBox(height: 25.0,),
+                InitialSmallText()
+              ],
+            )
+          )
         )
       )
     );
