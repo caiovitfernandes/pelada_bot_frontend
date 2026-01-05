@@ -24,7 +24,7 @@ class _PrincipalState extends State<Principal> {
                 colorFilter: ColorFilter.mode(
                   AppColors.background.withValues(alpha: 0.125),
                   BlendMode.dstATop
-                )
+                ),
               )
             ),
             child: Column(
@@ -36,7 +36,10 @@ class _PrincipalState extends State<Principal> {
                 const SizedBox(height: 25.0,),
                 MainText(),
                 const SizedBox(height: 25.0,),
-                InitialSmallText()
+                InitialSmallText(),
+                const SizedBox(height: 25.0,),
+                GreenLargeButton(),
+
               ],
             )
           )

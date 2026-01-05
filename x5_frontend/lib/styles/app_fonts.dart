@@ -70,7 +70,7 @@ class AppFonts {
   );
 
   static const TextStyle _blackTextButton = TextStyle(
-    fontSize: 20,
+    fontSize: 21,
     fontWeight: FontWeight.bold,
     color: AppColors.background,
   );  
