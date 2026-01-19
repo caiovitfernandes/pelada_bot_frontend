@@ -1,23 +1,21 @@
-import '_barrel_central.dart';
+import 'package:flutter/material.dart';
+import 'theme/app_theme.dart';
+import 'screens/login_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const X5BotApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class X5BotApp extends StatelessWidget {
+  const X5BotApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       title: 'X5 Bot',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
-      home: const Principal()
+      debugShowCheckedModeBanner: false,
+      theme: x5Theme,
+      home: LoginScreen(), // Inicia na tela de login
     );
   }
 }
-
