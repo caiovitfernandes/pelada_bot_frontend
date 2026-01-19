@@ -81,6 +81,19 @@ class AppFonts {
     color: AppColors.principalText,
   );  
 
+  static const TextStyle _whiteBigTextCard = TextStyle(
+    fontSize: 25,
+    fontWeight: FontWeight.bold,
+    color: AppColors.principalText,
+  );  
+
+  static const TextStyle _minusGrey = TextStyle(
+    fontSize: 16,
+    height: 1.5,
+    fontWeight: FontWeight.normal,
+    color: AppColors.minusText,
+  );
+
   // Métodos
   static Text title(String text) => Text(text, style: _titleStyle);
   static Text titleBar(String textOne, String textTwo) => Text.rich(TextSpan(text: textOne, style: _titleStyleOne, children: [TextSpan(text: textTwo, style: _titleStyleTwo)]));
@@ -90,4 +103,6 @@ class AppFonts {
   static Text smallGrey(String text) => Text(text, style: _smallGrey, textAlign: TextAlign.center,);
   static Text blackTextButton(String text) => Text(text, style: _blackTextButton, textAlign: TextAlign.center,);
   static Text whiteTextButton(String text) => Text(text, style: _whiteTextButton, textAlign: TextAlign.center,);
+  static Text whiteBigTextCard(String text) => Text(text, style: AppFonts._whiteBigTextCard, textAlign: TextAlign.center,);
+  static Text minusGrey(String text) => Text(text, style: AppFonts._minusGrey, textAlign: TextAlign.center,);
 }

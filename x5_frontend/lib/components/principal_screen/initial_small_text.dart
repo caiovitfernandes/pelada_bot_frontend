@@ -8,7 +8,7 @@ class InitialSmallText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25),
-      child: AppFonts.smallGrey("Gerencie grupos, balance times automaticamente, acompanhe rankings e descubra quem são os craques da sua região. Tudo em um só app."),
+      child: AppFonts.smallGrey("Gerencie grupos, balanceie times automaticamente, acompanhe rankings e descubra quem são os craques da sua região. Tudo em um só app."),
     );
   }
 }

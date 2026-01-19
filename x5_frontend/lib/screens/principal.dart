@@ -41,7 +41,9 @@ class _PrincipalState extends State<Principal> {
                 GreenLargeButton(),
                 const SizedBox(height: 15.0,),
                 TransparentLargeButton(),
-
+                const SizedBox(height: 45.0,),
+                SquaredCardGroup(),
+                const SizedBox(height: 45.0,),
               ],
             )
           )
