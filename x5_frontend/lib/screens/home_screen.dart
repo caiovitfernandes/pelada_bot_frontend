@@ -4,6 +4,8 @@ import '../models/player.dart';
 import '../theme/app_theme.dart';
 import 'match_screen.dart';
 import '../models/selection_player.dart';
+import 'manage_players_screen.dart'; // Você precisará criar estes arquivos
+import 'setup_match_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   final String peladaId;
@@ -65,9 +67,40 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, height: 1.2)),
               const SizedBox(height: 30),
               
-              _buildActionButton("Ver Partida Atual", Icons.sports_soccer, X5Colors.primaryGreen, () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const MatchScreen()));
-              }),
+              Row(
+                children: [
+                  Expanded(
+                    child: _buildActionButton("Ver Partida Atual", Icons.sports_soccer, X5Colors.primaryGreen, () {
+                      Navigator.push(
+                        context, 
+                        MaterialPageRoute(builder: (context) => MatchScreen(peladaId: widget.peladaId))
+                      );
+                    }),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 12),
+              Row(
+                children: [
+                  Expanded(
+                    child: _buildActionButton("Novo Sorteio", Icons.shuffle, Colors.white, () {
+                      Navigator.push(
+                        context, 
+                        MaterialPageRoute(builder: (context) => SetupMatchScreen(peladaId: widget.peladaId))
+                      );
+                    }),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: _buildActionButton("Atletas", Icons.group_add, Colors.white10, () {
+                      Navigator.push(
+                        context, 
+                        MaterialPageRoute(builder: (context) => ManagePlayersScreen(peladaId: widget.peladaId))
+                      );
+                    }),
+                  ),
+                ],
+              ),
               
               const SizedBox(height: 20),
               
